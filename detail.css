@@ -1,0 +1,60 @@
+﻿*{padding:0;margin:0;}
+#container{width:1080px;margin:0 auto;height:900px;}
+#head{height:142px;}
+#main-menu img,ul,input{vertical-align:middle;}
+#main-menu img{margin-left:50px;padding-right:20px;}
+#main-menu{border-bottom:1px solid #ccc;}
+#main-menu ul{list-style:none;display:inline-block;height:93px;}
+#main-menu ul li{float:left;height:93px;line-height:93px;
+	font-size:18px;font-family:微软雅黑;color:#000;padding-left:15px;padding-right:15px;}
+#main-menu ul li:hover{color:#31c27c;cursor:pointer;}
+#main-menu ul li:nth-child(1) a{text-decoration:none;color:#000;}
+#main-menu ul li:nth-child(1) a:hover{color:#31c27c;}
+#main-menu ul li.select{background-color:#31c27c;color:#fff;}
+#main-menu input{height:35px;border-radius:4px;border-color:#ccc;display:inline-block;margin-left:20px;font-size:14px;
+			background-color:#fff;}/* vertical-align */
+
+#main-menu a.click{margin-left:10px;font-size:14px;font-weight:bold;color:#000;text-decoration:none;}
+#main-menu a.click:hover{color:#31c27c;}
+#main-menu span{display:inline-block;height:39px;line-height:39px;background-color:#31c27c;color:#fff;font-size:14px;
+			font-weight:bold;cursor:pointer;padding-right:10px;padding-left:10px;margin-left:15px;}
+#sub-menu ul{list-style:none;height:51px;margin-left:300px;}
+#sub-menu ul li{float:left;height:51px;line-height:51px;padding-right:20px;padding-left:20px;
+			font-size:16px;cursor:pointer;font-weight:bold;}
+#sub-menu ul li.select{color:#31c27c;}
+#sub-menu ul li:hover{color:#31c27c;}
+#main{height:758px;background-image:url("images/bgim.png");background-repeat:no-repeat;background-size:100% 100%;position:relative;}
+#main #par1{text-align:center;color:#fff;font-size:45px;font-family:微软雅黑;padding-top:150px;margin-bottom:30px;}
+#main #par2{text-align:center;color:#fff;font-size:25px;font-family:微软雅黑;}
+#main span.onlog{text-align:center;color:#fff;display:inline-block;width:150px;height:45px;line-height:45px;
+			font-size:16px;cursor:pointer;background-color:#31c27c;font-weight:bold;margin-left:450px;border-radius:2px;
+			position:absolute;animation-name:spanshow;animation-duration:1.5s;animation-timing-function:linear;
+			animation-fill-mode:forwards;}
+#main span.onlog:hover{text-decoration:underline;}
+@keyframes spanshow{
+	0%{bottom:0px;opacity:0;}
+	50%{opacity:5}
+	100%{bottom:50%;opacity:10;}
+}
+#main #log{width:400px;height:300px;background-color:#fff;position:absolute;top:15%;left:30%;
+			animation-duration:0.6s;animation-timing-function:linear;animation-fill-mode:forwards;z-index:-1;
+			border:1px solid #ccc;}
+
+@keyframes logshow{
+	0%{z-index:-1;}
+	100%{z-index:11;}
+}
+@keyframes unlog{
+	0%{z-index:11;}
+	100%{z-index:-1;}
+}
+#log p.par1{text-align:center;font-size:20px;padding-top:15px;font-weight:bold;}
+#log p.par2{text-align:center;font-size:15x;color:#aaa;font-weight:bold;margin-bottom:20px;margin-top:20px;line-height:25px;}
+#log p.par2 a{text-decoration:none;}
+#log img{margin-left:150px;}
+#log span{color:#aaa;font-size:30px;margin-left:95%;}
+#log span:hover{color:#31c27c;cursor:pointer;}
+#footer{height:50px;background-color:#333;color:#999;font-size:14px;}
+#footer p{text-align:center;padding-top:8px;}
+#footer a{color:#999;text-decoration:none;}
+#footer a:hover{color:#31c27c;font-size:14px;}

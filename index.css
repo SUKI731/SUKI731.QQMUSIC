@@ -1,0 +1,59 @@
+*{padding:0;margin:0;}
+#container{width:1080px;margin:0 auto;height:900px;}
+#head{height:142px;}
+#main-menu img,ul,input{vertical-align:middle;}
+#main-menu input{background-color:#fff;}
+#main-menu img{margin-left:50px;padding-right:20px;}
+#main-menu{border-bottom:1px solid #ccc;}
+#main-menu ul{list-style:none;display:inline-block;height:93px;}
+#main-menu ul li{float:left;height:93px;line-height:93px;
+	font-size:18px;font-weight:bold;color:#000;padding-left:15px;padding-right:15px;}
+#main-menu ul li:nth-child(2) a{text-decoration:none;color:#000;}
+#main-menu ul li:nth-child(2) a:hover{color:#31c27c;}
+#main-menu ul li:hover{color:#31c27c;cursor:pointer;}
+#main-menu ul li.select{background-color:#31c27c;color:#fff;}
+#main-menu input{height:39px;border-radius:4px;border-color:#ccc;display:inline-block;}/* vertical-align */
+#main-menu input{margin-left:20px;font-size:14px;}
+#main-menu a.click{margin-left:10px;font-size:14px;font-weight:bold;color:#000;text-decoration:none;}
+#main-menu a.click:hover{color:#31c27c;}
+#main-menu span{display:inline-block;height:39px;line-height:39px;background-color:#31c27c;color:#fff;font-size:14px;
+	font-weight:bold;cursor:pointer;padding-right:10px;padding-left:10px;margin-left:15px;}
+
+#sub-menu ul{list-style:none;height:51px;margin-left:300px;}
+#sub-menu ul li{float:left;height:51px;line-height:51px;padding-right:20px;padding-left:20px;
+	font-size:16px;font-weight:bold;cursor:pointer;}
+#sub-menu ul li a{text-decoration:none;color:#000;}
+#sub-menu ul li a:hover{color:#31c27c;}
+#sub-menu ul li:hover{color:#31c27c;}
+#main{height:708px;background-image:url("images/bg.png");background-repeat:no-repeat;
+	position:relative;}
+#main #third-menu{position:absolute;top:30px;left:180px;}
+#main #third-menu p{font-size:50px;color:#fff;margin-top:20px;margin-left:250px;}
+#main #third-menu ul{list-style:none;margin-left:220px;margin-top:50px;}
+#main #third-menu ul li{display:inline-block;color:#ccc;padding-right:35px;font-weight:bold;cursor:pointer;}
+#main #third-menu ul li:hover{color:#fff;}
+#main #third-menu ul li.select{color:#fff;}
+#main div#picture{width:720px;height:288px;position:relative;left:180px;top:220px;overflow:hidden;}
+#main .scroll{position:absolute;left:100%;animation-duration:1s;animation-timing-function:linear;
+	animation-fill-mode:forwards;cursor:pointer;}
+#main div.scroll:nth-child(1){left:0;}
+#main div.scroll.show{animation-name:showTab;}
+#main div.scroll.disappear{animation-name:disappearTab;}
+@keyframes showTab{
+	0%{left:100%;}
+	100%{left:0;}
+}
+@keyframes disappearTab{
+	0%{left:0;}
+	100%{left:100%;}
+}
+#main span{position:absolute;font-size:80px;color:#fff;cursor:pointer;top:50%;transform:translateY(-50%);
+	background-color:#ccc;}
+#main span:hover{width:80px;text-align:center;background-color:#31c27c;}
+span#left{left:10px;}
+span#right{right:10px;}
+#footer{height:50px;background-color:#333;color:#999;font-size:14px;}
+#footer p{text-align:center;padding-top:8px;}
+#footer a{color:#999;text-decoration:none;}
+#footer a:hover{color:#31c27c;}
+
